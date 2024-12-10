@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import logoLogin from '../assets/images/logo-login.png';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { withErrorBoundary } from 'react-error-boundary';
-import ErrorComponent from '../components/common/ErrorComponent';
+import ErrorComponent from '../components/Common/ErrorComponent';
 import { useSelector } from 'react-redux';
 import { WrapperContainLeftRight, WrapperContainerRight, WrapperFormContainer } from '../pages/Login/style';
 import { Image } from 'antd';
