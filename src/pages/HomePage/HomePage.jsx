@@ -51,7 +51,6 @@ const HomePage = () => {
         refetchOnWindowFocus: false, // Disable refetching on window focus
         enabled: !!limit && ![0].includes(limit),
         placeholderData: (previousData) => previousData,
-: true
     });
 
     useEffect(() => {

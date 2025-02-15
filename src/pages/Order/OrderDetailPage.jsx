@@ -48,8 +48,7 @@ const OrderDetailPage = () => {
         queryFn: fetchDetailOrder,
         enabled: !!params.orderId,
         refetchOnWindowFocus: false,
-                placeholderData: (previousData) => previousData,
-: true,
+        placeholderData: (previousData) => previousData,
     });
 
     const { deliveryMethod, paymentMethod, shippingPrice, itemsPrice, totalPrice } = userOrderHistory(data ?? {});

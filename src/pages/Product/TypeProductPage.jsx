@@ -61,7 +61,6 @@ const TypeProductPage = () => {
         enabled: !!params.productType,
         refetchOnWindowFocus: false,
                 placeholderData: (previousData) => previousData,
-: true,
     });
 
     const onChangePaginate = (current, pageSize) => {
