@@ -47,7 +47,8 @@ const MyOrderPage = () => {
         retryDelay: 1000, // Delay 1 second between retries
         enabled: !!params.userId,
         refetchOnWindowFocus: false,
-        keepPreviousData: true,
+                placeholderData: (previousData) => previousData,
+: true,
     });
 
     const getStatusTag = (type, status) => {

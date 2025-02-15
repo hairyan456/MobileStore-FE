@@ -38,7 +38,7 @@ const HomePage = () => {
             }
         } catch (error) {
             toast.error(error?.message ?? 'Failed while fetching Products');
-            console.log(error);
+            console.log(error); 
         }
     }, [searchProduct]);
 
@@ -50,7 +50,8 @@ const HomePage = () => {
         retryDelay: 1000,  // Delay 1 second between retries
         refetchOnWindowFocus: false, // Disable refetching on window focus
         enabled: !!limit && ![0].includes(limit),
-        keepPreviousData: true
+        placeholderData: (previousData) => previousData,
+: true
     });
 
     useEffect(() => {

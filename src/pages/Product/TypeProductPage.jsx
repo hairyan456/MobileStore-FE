@@ -60,7 +60,8 @@ const TypeProductPage = () => {
         queryFn: () => fetchProductsByType(+statePaginate.currentPage, +statePaginate.limit, searchProduct, params.productType),
         enabled: !!params.productType,
         refetchOnWindowFocus: false,
-        keepPreviousData: true,
+                placeholderData: (previousData) => previousData,
+: true,
     });
 
     const onChangePaginate = (current, pageSize) => {
